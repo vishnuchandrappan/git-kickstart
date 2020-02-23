@@ -1,0 +1,223 @@
+/* font-family: 'Finger Paint', cursive;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Dosis', sans-serif;
+5cdb95 */
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #05386b;
+  font-family: "Dosis", sans-serif;
+  transition: 0.4s;
+  color: white !important;
+}
+
+.header {
+  font-family: "Anonymous Pro", monospace;
+  text-align: center;
+  background: #5cdb95;
+  margin: 0;
+  padding: 20px;
+  letter-spacing: 18px;
+}
+
+.header:hover {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, tomato, cyan, silver, red);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -100%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
+}
+
+.container {
+  max-width: 65%;
+  display: block;
+  margin: 0 auto;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px #5cdb95;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  font-size: larger;
+}
+
+#nav-name {
+  font-family: "Finger Paint", cursive;
+  font-size: larger;
+}
+
+.nav-item,
+.nav-btn {
+  font-family: "Dosis", sans-serif;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.4s;
+}
+
+.nav-btn {
+  display: none !important;
+}
+
+.nav-item span {
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+
+.nav-item span:hover {
+  color: silver;
+  border-bottom: solid 1px;
+  transition: 0.2s;
+}
+
+img {
+  width: 97%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.title {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+.member-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  border: solid 2px #5cdb95;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 50%;
+  min-height: 70px;
+  min-width: 200px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  color: silver;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.card-name {
+  margin: 0;
+  border-bottom: solid 1.5px silver;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+
+  #navbar {
+    display: block;
+  }
+
+  #nav-name {
+    text-align: center;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-btn {
+    display: block !important;
+  }
+
+  .member-list {
+    display: block;
+  }
+
+  .card {
+    max-width: 100%;
+    min-height: 65px;
+    min-width: 200px;
+  }
+
+  .card:hover {
+    color: silver;
+    transform: scale(0.9);
+    transition: 0.2s;
+  }
+
+  .fa-bars {
+    transition: 0.4s;
+  }
+
+  .nav-item {
+    display: none;
+    transition: 0.4s;
+  }
+
+  .nav-item-toggle {
+    display: block;
+    transition: 0.4s;
+  }
+
+  .rotate90 {
+    transition: 0.2s;
+    transform: rotate(360deg);
+  }
+
+  .rotate0 {
+    transition: 0.2s;
+    transform: rotate(0deg);
+  }
+
+  .menu-item {
+    display: block !important;
+    min-width: 100% !important;
+    transition: 0.4s;
+    text-align: center;
+    border-bottom: solid 1px silver;
+    margin-top: 20px;
+  }
+
+  #nav-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
